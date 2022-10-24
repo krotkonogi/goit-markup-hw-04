@@ -71,10 +71,7 @@ body{
     padding-bottom: 94px;
 }
 
-.section-bg{
-    background-color: var(--footer-bg-color);
-    background-image: url(./images/image-17);
-}
+.section-bg{background-color: var(--footer-bg-color);}
 
 .header{
     color: var(--top-bg-color);
