@@ -338,7 +338,19 @@ body{
     height: 600px;
     left: 0px;
     top: 80px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(./images/image-17.jpg);
+}
+
+.title-color {
+    min-width: 1200px;
+    background: #2f303a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('./../images/index_img/background-title.jpg');
 }
 
