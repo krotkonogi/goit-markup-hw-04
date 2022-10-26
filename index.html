@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <title>WebStudio</title>
     <meta charset="UTF-8" />
@@ -14,195 +14,514 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="top-nav">
-      <div class="container just-spacebetween flex">
-        <a href="./index.html" class="link logo studioheader">
-          <span class="logo-1">Web</span>
-          <span class="logo-2">Studio</span>
-        </a>
+      <div class="header-footer-style">
+        <a class="logo" href="./index.html">Web<span class="header-studio">Studio</span></a>
         <nav>
-          <ul class="list flex noleftpadding">
-            <li>
-              <a href="/agencja" class="link navigation space">Agencja</a>
-            </li>
-            <li class="navigation">
-              <a href="./portfolio.html" class="link navigation space">Portfolio</a>
-            </li>
-            <li class="navigation">
-              <a href="/kontakt" class="link navigation">Kontakt</a>
-            </li>
+          <ul class="list navigation">
+            <li><a href="#">Agencja</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="list flex just">
+
+        <ul class="list">
           <li>
-            <a href="mailto:info@devstudio.com" class="link contact-top mail"
-              >info@devstudio.com
-            </a>
+            <a class="address" href="mailto:info@devstudio.com"
+              ><svg class="icon">
+                <use y="2" width="16" height="12" href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+48111111111" class="link contact-top">+48 111 111 111</a>
+            <a class="address" href="tel:+48111111111"
+              ><svg class="icon">
+                <use x="3" width="10" height="16" href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="section-bg">
-        <div class="container headerbox">
-          <div>
-            <h1 class="header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          </div>
-          <div>
-            <button type="button" class="big-button">Zamów usługe</button>
-          </div>
-        </div>
+      <section class="section-1">
+        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button type="button">Zamów usługe</button>
       </section>
-      <section>
-        <div class="container flexlorem">
-          <!-- Lorem Ipsum  -->
-          <ul class="list flex section-main">
-            <li class="article">
-              <h3 class="article-title">LOREM ISPUM</h3>
-              <p class="article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
+      <section class="section-2 container section-style">
+        <div class="item-1-s2">
+          <ul class="list-1 list">
+            <li>
+              <figure>
+                <svg>
+                  <use
+                    x="100"
+                    y="25"
+                    width="70"
+                    height="70"
+                    href="./images/icons.svg#icon-antenna-1"
+                  ></use>
+                </svg>
+                <figcaption>
+                  <h4>LOREM IPSUM</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </figcaption>
+              </figure>
             </li>
-            <li class="article">
-              <h3 class="article-title">LOREM ISPUM</h3>
-              <p class="article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
+            <li>
+              <figure>
+                <svg>
+                  <use
+                    x="100"
+                    y="25"
+                    width="70"
+                    height="70"
+                    href="./images/icons.svg#icon-clock-1"
+                  ></use>
+                </svg>
+                <figcaption>
+                  <h4>LOREM IPSUM</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </figcaption>
+              </figure>
             </li>
-            <li class="article">
-              <h3 class="article-title">LOREM ISPUM</h3>
-              <p class="article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
+            <li>
+              <figure>
+                <svg>
+                  <use
+                    x="100"
+                    y="25"
+                    width="70"
+                    height="70"
+                    href="./images/icons.svg#icon-diagram-1"
+                  ></use>
+                </svg>
+                <figcaption>
+                  <h4>LOREM IPSUM</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </figcaption>
+              </figure>
             </li>
-            <li class="article">
-              <h3 class="article-title">LOREM ISPUM</h3>
-              <p class="article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
+            <li>
+              <figure>
+                <svg>
+                  <use
+                    x="100"
+                    y="25"
+                    width="70"
+                    height="70"
+                    href="./images/icons.svg#icon-astronaut-1"
+                  ></use>
+                </svg>
+                <figcaption>
+                  <h4>LOREM IPSUM</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                    non sodales dui. Interdum et malesuada
+                  </p>
+                </figcaption>
+              </figure>
             </li>
           </ul>
         </div>
-      </section>
-      <section>
-        <div class="container section">
-          <!-- portfolio  -->
-          <h2 class="section-title">Czym się zajmujemy</h2>
-          <ul class="list flex noleftpadding">
-            <li class="article">
+        <div class="item-2-s2">
+          <h2>Czym się zajmujemy</h2>
+          <ul class="list">
+            <li>
               <img
-                src="./images/image-2.jpg"
+                src="./images/image(2).jpg"
                 alt="Implementation of algorithms"
                 width="370"
                 height="294"
               />
             </li>
-            <li class="article">
-              <img src="./images/image-1.jpg" alt="Mobile applications" width="370" height="294" />
+            <li>
+              <img src="./images/image(1).jpg" alt="Mobile applications" width="370" height="294" />
             </li>
-            <li class="article">
-              <img src="./images/image-3.jpg" alt="Application styling" width="370" height="294" />
+            <li>
+              <img src="./images/image(3).jpg" alt="Application styling" width="370" height="294" />
             </li>
           </ul>
         </div>
       </section>
-      <section class="section section-employee">
-        <div class="container">
-          <!-- Zespół  -->
-          <h2 class="section-title">Nasz zespół</h2>
-          <ul class="list flex noleftpadding">
+      <div class="section-3-bg">
+        <section class="section-3 container section-style">
+          <h2>Nasz zespół</h2>
+          <ul class="list">
             <li>
-              <figure class="figure">
+              <figure>
                 <img
-                  class="no-gap"
-                  src="./images/image-4.jpg"
-                  alt="John Doe Profile"
+                  src="./images/image(4).jpg"
+                  alt="John Doe Product Desinger"
                   width="270"
                   height="260"
                 />
-                <figcaption class="caption">
-                  <h4 class="employee-tag resetmargin">John Doe</h4>
-                  <p class="employee-description">Product Designer</p>
+                <figcaption>
+                  <h3>John Doe</h3>
+                  <p>Product Desinger</p>
+                  <ul class="list icon-social">
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-instagram-2"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-twitter-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-facebook-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-linkedin-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="figure">
+              <figure>
                 <img
-                  class="no-gap"
-                  src="./images/image-5.jpg"
-                  alt="John Doe Profile"
+                  src="./images/image(5).jpg"
+                  alt="John Doe Frontend Developer"
                   width="270"
                   height="260"
                 />
-                <figcaption class="caption">
-                  <h4 class="employee-tag resetmargin">John Doe</h4>
-                  <p class="employee-description">Frontend Developer</p>
+                <figcaption>
+                  <h3>John Doe</h3>
+                  <p>Frontend Developer</p>
+                  <ul class="list icon-social">
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-instagram-2"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-twitter-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-facebook-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-linkedin-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="figure">
+              <figure>
                 <img
-                  class="no-gap"
-                  src="./images/image-6.jpg"
-                  alt="John Doe Profile"
+                  src="./images/image(6).jpg"
+                  alt="John Doe Marketing"
                   width="270"
                   height="260"
                 />
-                <figcaption class="caption">
-                  <h4 class="employee-tag resetmargin">John Doe</h4>
-                  <p class="employee-description">Marketing</p>
+                <figcaption>
+                  <h3>John Doe</h3>
+                  <p>Marketing</p>
+                  <ul class="list icon-social">
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-instagram-2"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-twitter-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-facebook-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-linkedin-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="resetmargin lastfigure">
+              <figure>
                 <img
-                  class="no-gap"
-                  src="./images/image-7.jpg"
-                  alt="John Doe Profile"
+                  src="./images/image(7).jpg"
+                  alt="John Doe UI Designer"
                   width="270"
                   height="260"
                 />
-                <figcaption class="caption">
-                  <h4 class="employee-tag resetmargin">John Doe</h4>
-                  <p class="employee-description">UI Designer</p>
+                <figcaption>
+                  <h3>John Doe</h3>
+                  <p>UI Designer</p>
+                  <ul class="list icon-social">
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-instagram-2"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-twitter-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-facebook-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg>
+                        <use
+                          x="12"
+                          y="12"
+                          href="./images/icons.svg#icon-linkedin-1"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
           </ul>
-        </div>
+        </section>
+      </div>
+      <section class="section-4 container section-style">
+        <h2>Nasi klienci</h2>
+        <ul class="list">
+          <li>
+            <a class="icon"
+              ><svg width="170" height="92">
+                <use href="./images/icons.svg#icon-client1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon">
+              <svg width="170" height="92">
+                <use href="./images/icons.svg#icon-client2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon">
+              <svg width="170" height="92">
+                <use href="./images/icons.svg#icon-client3"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon">
+              <svg width="170" height="92">
+                <use href="./images/icons.svg#icon-client4"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon">
+              <svg width="170" height="92">
+                <use href="./images/icons.svg#icon-client5"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon">
+              <svg width="170" height="92">
+                <use href="./images/icons.svg#icon-client6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="studiofooter">
-          <a href="./index.html" class="link logo">
-            <span class="logo-1">Web</span>
-            <span class="logo-3">Studio</span>
-          </a>
+      <div class="header-footer-style">
+        <div>
+          <a class="logo" href="#">Web<span class="footer-studio">Studio</span></a>
+          <address>
+            <ul class="list">
+              <li><p>m. Warszawa, Aleje Jerozolimskie 21</p></li>
+              <li>
+                <a class="address" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>
+                <a class="address" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
         </div>
-        <ul class="list noleftpadding resetmargin">
-          <li>
-            <address class="addres">m.Warszawa, Aleje Jerozolimskie 21</address>
-          </li>
-          <li class="bottom">
-            <a href="mailto:info@devstudio.com" class="link contact-bottom">info@devstudio.com </a>
-          </li>
-          <li class="last-bottom">
-            <a href="tel:+48111111111" class="link contact-bottom">+48 111 111 111</a>
-          </li>
-        </ul>
+        <div class="social-links">
+          <h4>Dołącz do nas</h4>
+          <ul class="list icon-social footer-social">
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-instagram-2"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-twitter-1"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-facebook-1"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-linkedin-1"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

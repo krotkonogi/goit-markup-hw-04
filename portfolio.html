@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <title>WebStudio</title>
     <meta charset="UTF-8" />
@@ -14,218 +14,225 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="top-nav">
-      <div class="container just-spacebetween flex">
-        <a href="./index.html" class="link logo studioheader">
-          <span class="logo-1">Web</span>
-          <span class="logo-2">Studio</span>
-        </a>
+      <div class="header-footer-style">
+        <a class="logo" href="#">Web<span class="header-studio">Studio</span></a>
         <nav>
-          <ul class="list flex noleftpadding">
-            <li>
-              <a href="/agencja" class="link navigation space">Agencja</a>
-            </li>
-            <li class="navigation">
-              <a href="./portfolio.html" class="link navigation space">Portfolio</a>
-            </li>
-            <li class="navigation">
-              <a href="/kontakt" class="link navigation">Kontakt</a>
-            </li>
+          <ul class="list navigation">
+            <li><a href="./index.html">Agencja</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="list flex just">
+
+        <ul class="list">
           <li>
-            <a href="mailto:info@devstudio.com" class="link contact-top mail"
-              >info@devstudio.com
-            </a>
+            <a class="address" href="mailto:info@devstudio.com"
+              ><svg class="icon">
+                <use y="2" width="16" height="12" href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+48111111111" class="link contact-top">+48 111 111 111</a>
+            <a class="address" href="tel:+48111111111"
+              ><svg class="icon">
+                <use x="3" width="10" height="16" href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <div class="container section">
-        <ul class="list flex buttonslist">
-          <!-- nawigacja-przyciski  -->
-          <li>
-            <button type="button" class="small-button">Wszystkie</button>
-          </li>
-          <li>
-            <button type="button" class="small-button">Strony</button>
-          </li>
-          <li>
-            <button type="button" class="small-button">Aplikacje</button>
-          </li>
-          <li>
-            <button type="button" class="small-button">Dizajn</button>
-          </li>
-          <li>
-            <button type="button" class="small-button">Marketing</button>
-          </li>
-        </ul>
-        <ul class="list flex-wrap resetmargin noleftpadding">
-          <!-- portfolio -->
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-8.jpg"
-                alt="Technocrack"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Technocrack</h3>
-                <p class="caption-content">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-9.jpg"
-                alt="NewOrleanVsGoldenStar"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Grafika New Orlean vs Golden Star</h3>
-                <p class="caption-content">Dizajn</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-10.jpg"
-                alt="Seafood"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Restauracja Seafood</h3>
-                <p class="caption-content">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-11.jpg"
-                alt="ProjektPrime"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Projekt Prime</h3>
-                <p class="caption-content">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-12.jpg"
-                alt="ProjektBoxes"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Projekt Boxes</h3>
-                <p class="caption-content">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-13.jpg"
-                alt="InspirationHasNoBorders"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Inspiration has no Borders</h3>
-                <p class="caption-content">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-14.jpg"
-                alt="MagazynLimitedEdition"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Magazyn Limited Edition</h3>
-                <p class="caption-content">Dizajn</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-15.jpg"
-                alt="ProjektLAB"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Projekt LAB</h3>
-                <p class="caption-content">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <figure class="resetmargin">
-              <img
-                class="image-width no-gap"
-                src="./images/image-16.jpg"
-                alt="GrowingBusiness"
-                width="370"
-                height="294"
-              />
-              <figcaption class="caption-2 border">
-                <h3 class="caption-title">Growing Business</h3>
-                <p class="caption-content">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
+      <section class="section-style container">
+        <div class="buttons">
+          <button type="button"><strong>Wszystkie</strong></button>
+          <button type="button"><strong>Strony</strong></button>
+          <button type="button"><strong>Aplikacje</strong></button>
+          <button type="button"><strong>Dizajn</strong></button>
+          <button type="button"><strong>Marketing</strong></button>
+        </div>
+        <div>
+          <ul class="list-portfolio list">
+            <li>
+              <figure>
+                <img src="./images/image(8).jpg" alt="Technocrack" width="370" height="294" />
+                <figcaption>
+                  <h3>Technocrack</h3>
+                  <p>Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/image(9).jpg"
+                  alt="Grafika New Orlean vs Golden Star"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3>Grafika New Orlean vs Golden Star</h3>
+                  <p>Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/image(10).jpg"
+                  alt="Restauracja Seafood"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3>Restauracja Seafood</h3>
+                  <p>Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/image(11).jpg" alt="Projekt Prime" width="370" height="294" />
+                <figcaption>
+                  <h3>Projekt Prime</h3>
+                  <p>Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/image(12).jpg" alt="Projekt Boxes" width="370" height="294" />
+                <figcaption>
+                  <h3>Projekt Boxes</h3>
+                  <p>Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/image(13).jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3>Inspiration has no Borders</h3>
+                  <p>Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="./images/image(14).jpg"
+                  alt="Magazyn Limited Edition"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3>Magazyn Limited Edition</h3>
+                  <p>Dizajn</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/image(15).jpg" alt="Projekt LAB" width="370" height="294" />
+                <figcaption>
+                  <h3>Projekt LAB</h3>
+                  <p>Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/image(16).jpg" alt="Growing Business" width="370" height="294" />
+                <figcaption>
+                  <h3>Growing Business</h3>
+                  <p>Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="studiofooter">
-          <a href="./index.html" class="link logo">
-            <span class="logo-1">Web</span>
-            <span class="logo-3">Studio</span>
-          </a>
+      <div class="container header-footer-style">
+        <div>
+          <a class="logo" href="#">Web<span class="footer-studio">Studio</span></a>
+          <address>
+            <ul class="list">
+              <li><p>m. Warszawa, Aleje Jerozolimskie 21</p></li>
+              <li>
+                <a class="address" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>
+                <a class="address" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
         </div>
-        <ul class="list noleftpadding resetmargin">
-          <li>
-            <address class="addres">m.Warszawa, Aleje Jerozolimskie 21</address>
-          </li>
-          <li class="bottom">
-            <a href="mailto:info@devstudio.com" class="link contact-bottom">info@devstudio.com </a>
-          </li>
-          <li class="last-bottom">
-            <a href="tel:+48111111111" class="link contact-bottom">+48 111 111 111</a>
-          </li>
-        </ul>
+        <div class="social-links">
+          <h4>Dołącz do nas</h4>
+          <ul class="list icon-social footer-social">
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-instagram-2"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-twitter-1"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-facebook-1"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use
+                  x="12"
+                  y="12"
+                  href="./images/icons.svg#icon-linkedin-1"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
