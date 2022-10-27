@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-background-color: #E5E5E5;
+    --top-bg-color: #FFFFFF;
+    --footer-bg-color: #2F303A;
+    --box-bg-color: #F5F4FA;
+    --text-color-main: #212121;
+    --text-color-alt: #757575;
+    --highlight-color: #2196F3;
+}
+
 h1,
 h2,
 h3,
@@ -17,8 +27,8 @@ p {
 }
 
 body {
-    background-color: #ffffff;
-    color: #212121;
+    background-color: var(--top-bg-color);
+    color: var(--text-color-main);
     font-family: "Roboto", sans-serif;
     margin: 0 auto;
     /* width: 1600px; */
@@ -64,7 +74,7 @@ body {
 }
 
 .top-nav svg {
-    fill: #757575;
+    fill: var(--text-color-alt);
     padding-top: 0px;
 }
 
@@ -84,8 +94,8 @@ body {
 }
 
 .buttons button {
-    background-color: #f5f4fa;
-    color: #212121;
+    background-color: var(--box-bg-color);
+    color: var(--text-color-main);
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
@@ -100,8 +110,8 @@ body {
 
 .buttons button:hover,
 .buttons button:focus {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--highlight-color);
+    color: var(--top-bg-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     transition: all 0.2s;
@@ -113,17 +123,17 @@ body {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    color: #2196f3;
+    color: var(--highlight-color);
     width: 145px;
 }
 
 .logo .header-studio {color: #000000;}
 
-.logo .footer-studio {color: #ffffff;}
+.logo .footer-studio {color: var(--top-bg-color);}
 
 .address {
     text-decoration: none;
-    color: #757575;
+    color: var(--text-color-alt);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -131,15 +141,26 @@ body {
 
 .footer {
     display: flex;
-    background-color: #2f303a;
-    color: #ffffff;
+    background-color: var(--footer-bg-color);
+    color: var(--top-bg-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     width: 100%;
     text-align: left;
-    padding: 60px 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 45px;
+    padding-right: 385px
+}
+
+.contact-align{
+    display: flex
+}
+
+.logo-footer{
+    margin-bottom: 20px;
 }
 
 .footer .logo {margin-bottom: 20px;}
@@ -170,15 +191,8 @@ body {
 
 .address:hover,
 .address:focus {
-    fill: #2196f3;
-    color: #2196f3;
-    transition: all 0.2s;
-}
-
-.address:hover svg,
-.address:focus svg {
-    fill: #2196f3;
-    color: #2196f3;
+    fill: var(--highlight-color);
+    color: var(--highlight-color);
     transition: all 0.2s;
 }
 
@@ -193,12 +207,12 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #212121;
+    color: var(--text-color-main);
 }
 
 .navigation>li>a:hover,
 .navigation>li>a:focus {
-    color: #2196f3;
+    color: var(--highlight-color);
     transition: all 0.2s;
 }
 
@@ -208,7 +222,7 @@ body {
         url(../images/image\(17\).jpg);
     background-size: auto, auto;
     background-position: center, center;
-    color: #ffffff;
+    color: var(--top-bg-color);
     text-align: center;
     max-width: 1600px;
     margin: auto;
@@ -228,8 +242,8 @@ body {
 }
 
 .section-1 button {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--highlight-color);
+    color: var(--top-bg-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -252,7 +266,7 @@ body {
 }
 
 .list-1 svg {
-    background-color: #f5f4fa;
+    background-color: var(--box-bg-color);
     border-radius: 4px;
     width: 270px;
     height: 120px;
@@ -273,7 +287,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--text-color-alt);
     letter-spacing: 0.03em;
     width: 270px;
 }
@@ -291,7 +305,7 @@ body {
     margin-bottom: 50px;
 }
 
-.section-3-bg {background-color: #f5f4fa;}
+.section-3-bg {background-color: var(--box-bg-color);}
 
 .section-3>h2 {
     font-weight: 700;
@@ -305,7 +319,7 @@ body {
 
 .section-3 li {
     width: 270px;
-    background-color: #ffffff;
+    background-color: var(--top-bg-color);
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -328,12 +342,12 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    color: #757575;
+    color: var(--text-color-alt);
     padding-bottom: 30px;
 }
 
 .section-3 svg {
-    background-color: #ffffff;
+    background-color: var(--top-bg-color);
     fill: #afb1b8;
     width: 44px;
     height: 44px;
@@ -344,14 +358,14 @@ body {
 
 .section-3 svg:hover,
 .section-3 svg:focus {
-    background-color: #2196f3;
-    fill: #ffffff;
+    background-color: var(--highlight-color);
+    fill: var(--top-bg-color);
     transition: all 0.2s;
 }
 
 .footer svg {
     background-color: rgba(255, 255, 255, 0.1);
-    fill: #ffffff;
+    fill: var(--top-bg-color);
     width: 44px;
     height: 44px;
     background-position: 12px 12px;
@@ -361,8 +375,8 @@ body {
 
 .footer svg:hover,
 .footer svg:focus {
-    background-color: #2196f3;
-    fill: #ffffff;
+    background-color: var(--highlight-color);
+    fill: var(--top-bg-color);
     transition: all 0.2s;
 }
 
@@ -399,7 +413,7 @@ body {
 
 .section-4 svg:hover,
 .section-4 svg:focus {
-    outline: 1px solid #2196f3;
+    outline: 1px solid var(--highlight-color);
     transition: all 0.2s;
 }
 
@@ -413,13 +427,13 @@ body {
 .icon {
     text-decoration: none;
     border-style: none;
-    background-color: #ffffff;
+    background-color: var(--top-bg-color);
     cursor: pointer;
 }
 
 .icon svg:hover,
 .icon svg:focus {
-    fill: #2196f3;
+    fill: var(--highlight-color);
     transition: all 0.2s;
 }
 
@@ -440,7 +454,7 @@ body {
 }
 
 .list-portfolio figure {
-    background: #ffffff;
+    background: var(--top-bg-color);
     border: 1px solid #eeeeee;
     margin: 0;
 }
@@ -461,7 +475,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    color: #757575;
+    color: var(--text-color-alt);
     margin: 0;
 }
 
