@@ -149,10 +149,11 @@ body {
     letter-spacing: 0.03em;
     width: 100%;
     text-align: left;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 45px;
-    padding-right: 385px
+    padding-left: 215px;
+    padding-right: 215px
 }
 
 .contact-align{
@@ -189,8 +190,15 @@ body {
 
 .footer .list {margin-right: 70px;}
 
-.address:hover,
-.address:focus {
+.contact-align .address:hover,
+.contact-align .address:focus{ 
+    fill: var(--highlight-color);
+    color: var(--highlight-color);
+    transition: all 0.2s;
+}
+
+.contact-align .icon:hover,
+.contact-align .icon:focus {
     fill: var(--highlight-color);
     color: var(--highlight-color);
     transition: all 0.2s;
